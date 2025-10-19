@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
-import pandas as pd
+
 import numpy as np
 from _diameter import _average_diameter
 from _func_dist_earth import _dist_earth
 from matplotlib.colors import LinearSegmentedColormap
 
-def visualize_asteroids(_average_diameter, _dist_earth):
 
+def visualize_asteroids(_average_diameter, _dist_earth):
     _average_diameter = np.array(_average_diameter)
     _dist_earth = np.array(_dist_earth)
     fig, ax = plt.subplots(figsize=(12, 8))
@@ -31,7 +31,7 @@ def visualize_asteroids(_average_diameter, _dist_earth):
     )
 
     cbar = plt.colorbar(scatter, ax=ax)
-    cbar.set_label('Dist to Earthи', fontsize=12)
+    cbar.set_label('Dist to Earth', fontsize=12)
 
     ax.set_title('Visualisation', fontsize=16, fontweight='bold')
     ax.set_xlabel('Average diameter', fontsize=12)
