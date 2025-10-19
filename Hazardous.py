@@ -15,7 +15,7 @@ def visualize_asteroids(_average_diameter, _dist_earth):
     max_size = _average_diameter.max()
     point_sizes = 20 + 480 * 2 * (_average_diameter - min_size) / (max_size - min_size)
 
-    colors = ['darkblue', 'blue', 'cyan', 'green', 'yellow', 'orange', 'red']
+    colors = ['blue', 'blue', 'cyan', 'green', 'yellow', 'orange', 'red']
     cmap = LinearSegmentedColormap.from_list('карта цветов', colors, N=256)
 
     scatter = ax.scatter(

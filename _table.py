@@ -45,8 +45,7 @@ def _draw_table(list_info):
         "Average diameter in KM": diameter,
         "Epoch Date Close Approach": epoch,
         "Relative Velocity km per hr": v,
-        "Miss Dist.(kilometers)": dist,
-        "Hazardous": hazardous}
+    }
 
     df = pd.DataFrame(properties)
 
@@ -54,7 +53,7 @@ def _draw_table(list_info):
     fig, ax = plt.subplots()
     ax.axis('off')
     t = plt.table(cellText=df.values, colLabels=df.columns, loc='center', cellLoc='center')
-    t.scale(3, 1.15)
+    t.scale(1.26, 2)
 
     plt.axis('off')
 
